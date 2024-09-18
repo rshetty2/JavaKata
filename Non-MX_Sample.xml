@@ -1,0 +1,69 @@
+<Document xmlns="urn:iso:20022:tech:xsd:pacs.008.001.08">
+    <CstmrCdtTrfInitn>
+        <GrpHdr>
+            <MsgId>MSG20240908XYZ456</MsgId>
+            <CreDtTm>2024-09-08T15:00:00</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <CtrlSum>1500.00</CtrlSum>
+            <InitgPty>
+                <Nm>ABC Ltd.</Nm>
+                <Id>
+                    <OrgId>
+                        <Othr>
+                            <Id>123456789</Id>
+                        </Othr>
+                    </OrgId>
+                </Id>
+            </InitgPty>
+        </GrpHdr>
+        <PmtInf>
+            <PmtInfId>PAYINF20240908XYZ456</PmtInfId>
+            <PmtMtd>TRF</PmtMtd>
+            <ReqdExctnDt>2024-09-09</ReqdExctnDt>
+            <Dbtr>
+                <Nm>ABC Ltd.</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>789</BldgNb>
+                    <PstCd>54321</PstCd>
+                    <TwnNm>Chicago</TwnNm>
+                    <Ctry>US</Ctry>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>US09876543210987654321</IBAN>
+                </Id>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                    <BICFI>HIJKLMNOXXX</BICFI>
+                </FinInstnId>
+            </DbtrAgt>
+            <CdtrAgt>
+                <FinInstnId>
+                    <BICFI>LMNOPQRSXXX</BICFI>
+                </FinInstnId>
+            </CdtrAgt>
+            <Cdtr>
+                <Nm>Jane Smith</Nm>
+                <PstlAdr>
+                    <StrtNm>Oak Avenue</StrtNm>
+                    <BldgNb>123</BldgNb>
+                    <PstCd>67890</PstCd>
+                    <TwnNm>Los Angeles</TwnNm>
+                    <Ctry>US</Ctry>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>US12345678901234567890</IBAN>
+                </Id>
+            </CdtrAcct>
+            <RmtInf>
+                <Ustrd>Payment for invoice 654321</Ustrd>
+            </RmtInf>
+            <InstdAmt Ccy="USD">1500.00</InstdAmt>
+        </PmtInf>
+    </CstmrCdtTrfInitn>
+</Document>

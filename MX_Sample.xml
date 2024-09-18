@@ -1,0 +1,69 @@
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+    <CstmrCdtTrfInitn>
+        <GrpHdr>
+            <MsgId>MSG20240908ABC123</MsgId>
+            <CreDtTm>2024-09-08T14:30:00</CreDtTm>
+            <NbOfTxs>1</NbOfTxs>
+            <CtrlSum>1500.00</CtrlSum>
+            <InitgPty>
+                <Nm>XYZ Corporation</Nm>
+                <Id>
+                    <OrgId>
+                        <Othr>
+                            <Id>987654321</Id>
+                        </Othr>
+                    </OrgId>
+                </Id>
+            </InitgPty>
+        </GrpHdr>
+        <PmtInf>
+            <PmtInfId>PAYINFO20240908ABC123</PmtInfId>
+            <PmtMtd>TRF</PmtMtd>
+            <ReqdExctnDt>2024-09-09</ReqdExctnDt>
+            <Dbtr>
+                <Nm>XYZ Corporation</Nm>
+                <PstlAdr>
+                    <StrtNm>Main Street</StrtNm>
+                    <BldgNb>123</BldgNb>
+                    <PstCd>12345</PstCd>
+                    <TwnNm>New York</TwnNm>
+                    <Ctry>US</Ctry>
+                </PstlAdr>
+            </Dbtr>
+            <DbtrAcct>
+                <Id>
+                    <IBAN>US12345678901234567890</IBAN>
+                </Id>
+            </DbtrAcct>
+            <DbtrAgt>
+                <FinInstnId>
+                    <BICFI>ABCDEFGHXXX</BICFI>
+                </FinInstnId>
+            </DbtrAgt>
+            <CdtrAgt>
+                <FinInstnId>
+                    <BICFI>HIJKLMNOXXX</BICFI>
+                </FinInstnId>
+            </CdtrAgt>
+            <Cdtr>
+                <Nm>John Doe</Nm>
+                <PstlAdr>
+                    <StrtNm>Elm Street</StrtNm>
+                    <BldgNb>456</BldgNb>
+                    <PstCd>67890</PstCd>
+                    <TwnNm>Los Angeles</TwnNm>
+                    <Ctry>US</Ctry>
+                </PstlAdr>
+            </Cdtr>
+            <CdtrAcct>
+                <Id>
+                    <IBAN>US09876543210987654321</IBAN>
+                </Id>
+            </CdtrAcct>
+            <RmtInf>
+                <Ustrd>Invoice 123456</Ustrd>
+            </RmtInf>
+            <InstdAmt Ccy="USD">1500.00</InstdAmt>
+        </PmtInf>
+    </CstmrCdtTrfInitn>
+</Document>
